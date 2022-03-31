@@ -10,9 +10,12 @@ function solution(answers) {
         arr2[i%8] === answers[i] ? count[1]++ : null;
         arr3[i%10] === answers[i] ? count[2]++ : null;
     }
+
     const maxValue = Math.max(...count);
+
     for (let j=0; j<count.length; j++){
     if (maxValue === count[j]) {answer.push(j+1)}
     }
-        return answer;
+    
+    return answer;
 }
