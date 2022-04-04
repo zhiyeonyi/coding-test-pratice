@@ -12,7 +12,7 @@ for(let i=0; i<input.length; i++){
     if(num ===0 ){
         answer.length === 0 ? console.log(0) :
         console.log(max) && answer.filter((e)=> e !== max) 
-    } else if(num%1===0){
+    } else if(num%1===0)
         answer.push(num)
     }
     // num===0 ? console.log(max) && input.filter((e) => e == max) : answer.push(num)
